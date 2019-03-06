@@ -28,7 +28,7 @@ JW: Plan out the use cases with the user in mind from start to end.
 
 What in my code and program design in the project went well? Is there anything I would do the same next time?
 
-JW: Majority of my CRUD routes and passing of data between pages went well.
+JW: Majority of my CRUD routes and passing of data between pages went well. 
 
 For each, please include code examples.
 

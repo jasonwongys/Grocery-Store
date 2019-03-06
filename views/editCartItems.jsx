@@ -1,5 +1,5 @@
 var React = require('react');
-//// page that confirms the editing of recipe
+
 var DefaultLayout = require('./defaultlayout');
 class EditCartItems extends React.Component {
 

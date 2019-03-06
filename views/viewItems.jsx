@@ -7,7 +7,7 @@ class ViewItems extends React.Component {
         return (
                 <div className="row">                
                   <div className="col-sm-4">
-                    <div className="card">
+                    <span className="card">
 
                       <img src={items.photo} class="card-img-top" alt="items" />
                         <div clasName="card-body">
@@ -15,7 +15,7 @@ class ViewItems extends React.Component {
                           <p class="card-text">${items.price} </p>
                           <a href={"/items/" + items.id} class="btn btn-primary">Add Item</a>
                         </div>
-                    </div>
+                    </span>
                   </div>
                 </div>
             );

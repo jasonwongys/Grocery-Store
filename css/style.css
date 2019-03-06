@@ -6,30 +6,21 @@ body{
 	color: white;
 	text-shadow: 2px 1px black;
 	font-size: 20px;
+
 }
 
-h1{
-	font-size: 35px;
-}
-
-h3{
-	font-size: 30px;
-}
-
-form{
-	display: inline-block;
-	margin: 0 10px;
-}
 
 input{
-	display: inline;
+	display: inline-block;
 	background-color: rgb(150, 55, 60);
 	font-size: 18px;
 	padding: 0 20px;
 }
 
+
 .container{
 	margin-top: 55px;
+	display: inline-block;
 }
 
 span{
@@ -42,6 +33,7 @@ span{
 	margin-top: 10px;
 	color: pink;
 	text-shadow: none;
+	display: inline-block;
 }
 
 .modal{
@@ -60,4 +52,8 @@ span{
   left: 0;
   width: 100%;
   z-index: 1;
+}
+
+.row {
+	display: inline-block;
 }
