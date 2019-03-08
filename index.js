@@ -1,18 +1,37 @@
 console.log("starting up!!");
-//var PORT = process.env.PORT || 5000;
+var PORT = process.env.PORT || 3000;
 
 const express = require('express');
 const methodOverride = require('method-override');
 const pg = require('pg');
+const url = require('url');
 
 // Initialise postgres client
-const configs = {
-  user: 'postgres',
-  host: '127.0.0.1',
-  database: 'martdb',
-  port: 5432,
-  password: '1234'
-};
+
+if ( process.env.DATABASE_URL ){
+  const params = url.parse(process.env.DATABASE_URL);
+  const auth = params.auth.split(':');
+
+  var configs = {
+    user: auth[0],
+    password: auth[1],
+    host: params.hostname,
+    port: params.port,
+    database: params.pathname.split('/')[1],
+    ssl: true
+  };
+
+} else {
+
+    const configs = {
+      user: 'postgres',
+      host: '127.0.0.1',
+      database: 'martdb',
+      port: 5432,
+      password: '1234'
+    };
+}
+
 
 const pool = new pg.Pool(configs);
 
@@ -283,9 +302,7 @@ $('.totals-value').fadeOut(fadeTime, function() {
 
 }
 
-function updateQty(quantityInput) {
-  var productRow = $(qia)
-}
+
 
 
 
