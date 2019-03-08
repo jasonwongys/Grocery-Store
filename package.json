@@ -12,6 +12,8 @@
     "body-parser":"*",
     "bcrypt": "^0.8.5"
   },
+  "engines" : { "node" : ">=11.11.0" },
+
   "author": "",
   "license": "ISC"
 }

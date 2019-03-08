@@ -20,7 +20,7 @@ pool.on('error', function (err) {
   console.log('idle client error', err.message, err.stack);
 });
 
-/**u
+
 // Init express app
 const app = express();
 
