@@ -10,7 +10,8 @@
   "dependencies": {
     "body-parser": "*",
     "express": "*",
-    "method-override": "^3.0.0"
+    "method-override": "^3.0.0",
+    "pg": "^7.8.2"
   },
   "engines": {
     "node": ">=11.11.0"
