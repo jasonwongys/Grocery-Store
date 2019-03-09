@@ -23,7 +23,7 @@ if ( process.env.DATABASE_URL ){
 
 } else {
 
-    const configs = {
+    var configs = {
       user: 'postgres',
       host: '127.0.0.1',
       database: 'martdb',
@@ -71,6 +71,20 @@ app.engine('jsx', reactEngine);
 app.get('/', (request, response) => {
   response.render("login");
 });
+
+
+app.get('/db', async (req, res) => {
+    try {
+      const client = await pool.connect()
+      const result = await client.query('SELECT * FROM test_table');
+      const results = { 'results': (result) ? result.rows : null};
+      res.render('pages/db', results );
+      client.release();
+    } catch (err) {
+      console.error(err);
+      res.send("Error " + err);
+    }
+  })
 
 
 app.post('/', (request, response) => {
