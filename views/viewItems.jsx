@@ -5,9 +5,10 @@ class ViewItems extends React.Component {
   render() {
     let items = this.props.items.map( (items, index) => {
         return (
+              <div className="card-deck">
                 <div className="row">                
-                  <div className="col-sm-4">
-                    <span className="card">
+                  <div className="col-sm-6">
+                    <div className="card">
 
                       <img src={items.photo} class="card-img-top" alt="items" />
                         <div clasName="card-body">
@@ -15,9 +16,10 @@ class ViewItems extends React.Component {
                           <p class="card-text">${items.price} </p>
                           <a href={"/items/" + items.id} class="btn btn-primary">Add Item</a>
                         </div>
-                    </span>
+                    </div>
                   </div>
                 </div>
+              </div>
             );
     });
         return (

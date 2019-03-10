@@ -70,7 +70,7 @@ app.engine('jsx', reactEngine);
 //Get the login form for user 
 app.get('/', (request, response) => {
   response.render("login");
-});
+}).listen();
 
 
 app.get('/db', async (req, res) => {
@@ -326,7 +326,7 @@ $('.totals-value').fadeOut(fadeTime, function() {
  * Listen to requests on port 3000
  * ===================================
  */
-const server = app.listen(3000, () => console.log('~~~ Tuning in to the waves of port 3000 ~~~'));
+const server = app.listen(process.env.PORT || 3000, () => console.log('~~~ Tuning in to the waves of port 3000 ~~~'));
 
 let onClose = function(){
 
