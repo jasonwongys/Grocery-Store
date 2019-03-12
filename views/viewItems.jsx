@@ -8,7 +8,7 @@ class ViewItems extends React.Component {
           <div>
                  <div class="col-sm">
                     <div className="card">
-                      <img src={items.photo} className="card-img-top w-auto p-3" alt="items" />
+                      <img src={items.photo} className="card-img-top" alt="items" />
                         <div clasName="card-body">
                           <h5 className="card-title">{items.name}</h5>
                           <p className="card-text">${items.price} </p>

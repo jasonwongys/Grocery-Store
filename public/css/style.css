@@ -14,17 +14,19 @@ input {
 .container{
 	margin-top: 55px;
 	display: inline-block;
+	justify-content: center;
 }
 
-span{
-	font-size: 10px;
-}
 
 .card{
 	margin-top: 10px;
-
 }
 
 .row {
 	display: inline-block;
+}
+
+img {
+	width: 80px;
+	height: 80px;
 }
