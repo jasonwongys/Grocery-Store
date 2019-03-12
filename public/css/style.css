@@ -1,23 +1,15 @@
-body{
+body {
 	background-size: cover;
-	background-repeat: no-repeat;
-	min-height: 900px;
 	font-family: 'Oswald', cursive;
-	color: white;
-	text-shadow: 2px 1px black;
 	font-size: 20px;
-	background-color: blue;
-
+	background-image: url("carrots-food-fresh-616404.jpg");
 }
 
+input {
 
-input{
-	display: inline-block;
-	background-color: rgb(150, 55, 60);
 	font-size: 18px;
 	padding: 0 20px;
 }
-
 
 .container{
 	margin-top: 55px;
@@ -28,31 +20,9 @@ span{
 	font-size: 10px;
 }
 
-
-
 .card{
 	margin-top: 10px;
-	color: pink;
-	text-shadow: none;
-	display: inline-block;
-}
 
-.modal{
-	text-shadow: none;
-}
-
-.delete{
-	margin-left: 13px;
-}
-
-.nav {
-  overflow: hidden;
-  background-color: #4286f4;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
 }
 
 .row {

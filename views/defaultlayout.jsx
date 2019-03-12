@@ -10,7 +10,6 @@ class DefaultLayout extends React.Component {
         <link rel="stylesheet" type="text/css" href="/css/style.css" />
         <title>Grocery Shop</title>
         </head>
-
         <header>
           <h1> Grocery Shop</h1>
             <nav>

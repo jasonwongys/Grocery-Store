@@ -7,30 +7,27 @@ class ViewCart extends React.Component {
         return (
          
             <div>
-            <table className="table table-hover justify-content-center w-75">
-              <tbody>
+                <table className="table table-hover justify-content-center">
+                <tbody>
                     <tr>
                       <td>{cart.id}</td>                  
                       <td>{cart.items_id}</td>
                       <td>{cart.name}</td>
                       <td>{cart.price}</td>
                       <td>{cart.quantity}</td>
-
                       <td><a href={"/cart/" + cart.items_id+"/edit"}>Edit</a></td>
                     </tr>
                 </tbody>
                 </table>  
             </div>
-
             );
 
     });
     return (
           <DefaultLayout>
             <div>
-
               <h2> Cart Homepage</h2>
-              <table className="table table-hover justify-content-center w-75">
+              <table className="table table-hover justify-content-center">
               <thead className="thead-light">
                   <tr>
                     <th scope="col">Count</th>
@@ -41,14 +38,11 @@ class ViewCart extends React.Component {
                     <th scope="col">Action</th>
                   </tr>
               </thead>
-              
-              <tr>
-                {cart}
-              </tr>
+                  <tr>
+                    {cart}
+                  </tr>
               </table>
-              <label> Total Cost </label>
-              <div className="totals-value" id="cart-total"> </div> <br />
-              <button><a href="/summary">Checkout</a> </button>
+              
             </div>
             </DefaultLayout>
     );
