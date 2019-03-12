@@ -9,13 +9,13 @@ class ViewCart extends React.Component {
             <div>
                 <table className="table table-hover justify-content-center">
                 <tbody>
-                    <tr class="table table-hover justify-content-center table-light">
-                      <td>{cart.id}</td>                  
-                      <td>{cart.items_id}</td>
-                      <td>{cart.name}</td>
-                      <td>{cart.price}</td>
-                      <td>{cart.quantity}</td>
-                      <td><a href={"/cart/" + cart.items_id+"/edit"}>Edit</a></td>
+                    <tr class="table table-hover justify-content-center table-info">
+                      <td class="text-justify">{cart.id}</td>                  
+                      <td class="text-justify">{cart.items_id}</td>
+                      <td class="text-justify">{cart.name}</td>
+                      <td class="text-justify">{cart.price}</td>
+                      <td class="text-justify">{cart.quantity}</td>
+                      <td class="text-justify"><a href={"/cart/" + cart.items_id+"/edit"}>Edit</a></td>
                     </tr>
                 </tbody>
                 </table>  
