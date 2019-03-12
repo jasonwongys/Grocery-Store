@@ -9,7 +9,6 @@ class AddItem extends React.Component {
       <h2>Adding Item to Cart</h2>
       <DefaultLayout>
         <div class="d-flex justify-content-center">
-          <div class="container-bg">
               <img src= {items.photo} />
               <form method="POST" action="/items/">
                   <h3> Item ID: {items.id} </h3>
@@ -21,7 +20,6 @@ class AddItem extends React.Component {
                    Item Qty: <input name = "quantity" value="" placeholder="Enter quantity" /> <br/>
                    <input type = "submit" className="btn btn-primary" />
               </form>
-          </div>
         </div>
       </DefaultLayout>
     );

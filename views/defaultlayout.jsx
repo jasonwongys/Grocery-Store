@@ -31,9 +31,7 @@ class DefaultLayout extends React.Component {
         <body className="container-fluid">
             {this.props.children}         
         </body>
-        <footer>
-          <h4> Created by Jason Wong @ <a href="https://profiles.generalassemb.ly/profiles/jasonwongys">GA Profile</a> </h4>
-        </footer>
+
       </html>
     );
   }
