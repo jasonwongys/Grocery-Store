@@ -6,8 +6,9 @@ class AddItem extends React.Component {
     let items = this.props.items[0];
     console.log(items);
     return (
-      <h2>Adding Item to Cart</h2>
+      
       <DefaultLayout>
+      <h2>Adding Item to Cart</h2>
         <div class="d-flex justify-content-center">
               <img src= {items.photo} />
               <form method="POST" action="/items/">
