@@ -24,11 +24,13 @@ class EditCartItems extends React.Component {
             Item Qty
             <input name = "quantity" value={cartItem.quantity} placeholder="Enter quantity" /> 
             <input type = "submit" value="Save Changes" className="btn btn-primary"/>
+
+              <form method="POST" action={"/cart/" + cartItem.items_id + "?_method=DELETE"}>
+                <input type="submit" value="Delete Item" className="btn btn-danger" />
+              </form>
         </form>
 
-        <form method="POST" action={"/cart/" + cartItem.items_id + "?_method=DELETE"}>
-            <input type="submit" value="Delete Item" className="btn btn-danger" />
-        </form>
+        
 
       </div>
      </DefaultLayout>
