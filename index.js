@@ -6,6 +6,8 @@ const methodOverride = require('method-override');
 const pg = require('pg');
 const url = require('url');
 
+app.use(express.static('public'));
+
 // Initialise postgres client
 
 if ( process.env.DATABASE_URL ){
