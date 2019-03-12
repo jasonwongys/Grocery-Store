@@ -3,36 +3,35 @@ var DefaultLayout = require('./defaultlayout');
 
 class ViewItems extends React.Component {
   render() {
+    const card = {
+       width: '250px',
+       display: 'inline-block'
+   }
+   const cardCon = {
+       textAlign: 'center'
+   }
     let items = this.props.items.map( (items, index) => {
         return (
-              <div>
-                    <div className="card d-inline">
-                      <img src={items.photo}/>
-                        <div clasName="card-body">
+                      <div class="card" style={card}>
+                          <img src={items.photo} class="card-img-top"/>
+                          <div class="card-body">
                           <h5 className="card-title">{items.name}</h5>
-                          <p className="card-text">${items.price} </p>
+                            <p class="card-text">${items.price}</p>
+                          </div>
                           <a href={"/items/" + items.id} class="btn btn-primary">Add Item</a>
                         </div>
-                      </div>                           
-              </div>
-    
             );
     });
         return (
          <DefaultLayout>
-            <div> 
+            <div>
               <h2> List of Items Homepage</h2>
-              
-                    <div class="container">
-                    <div class="d-inline">
-                 {items}
-                    </div>
-                             
-                           </div>
-            
+
+                 <div style={cardCon}>{items}</div>
+
           </div>
           </DefaultLayout>
-        
+
     );
   }
 }
