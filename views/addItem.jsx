@@ -6,9 +6,10 @@ class AddItem extends React.Component {
     let items = this.props.items[0];
     console.log(items);
     return (
+      <h2>Adding Item to Cart</h2>
       <DefaultLayout>
         <div class="d-flex justify-content-center">
-          <h2>Adding Item to Cart</h2>
+          <div class="container-bg">
               <img src= {items.photo} />
               <form method="POST" action="/items/">
                   <h3> Item ID: {items.id} </h3>
@@ -17,10 +18,10 @@ class AddItem extends React.Component {
                   <input type="hidden" name = "name" value={items.name} />
                   <h3> Item Price: {items.price} </h3> <br/>
                   <input type="hidden" name = "price" value={items.price} />
-                   Item Qty: <input name = "quantity" value="" placeholder="quantity" /> <br/>
+                   Item Qty: <input name = "quantity" value="" placeholder="Enter quantity" /> <br/>
                    <input type = "submit" className="btn btn-primary" />
               </form>
-             
+          </div>
         </div>
       </DefaultLayout>
     );

@@ -17,6 +17,10 @@ input {
 	justify-content: center;
 }
 
+.container-bg {
+	background-color: white;
+	border-radius: 5px;
+}
 
 .card{
 	margin: 10px 10px;
