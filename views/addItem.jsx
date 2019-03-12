@@ -1,14 +1,13 @@
 var React = require("react");
 var DefaultLayout = require('./defaultlayout');
-// Adding of new Artists
+
 class AddItem extends React.Component {
   render() {
     let items = this.props.items[0];
     console.log(items);
     return (
       <DefaultLayout>
-        <div class="thumbnail">
-          <div class="caption">
+        <div class="d-flex justify-content-center">
           <h2>Adding Item to Cart</h2>
               <img src= {items.photo} />
               <form method="POST" action="/items/">
@@ -21,8 +20,8 @@ class AddItem extends React.Component {
                    Item Qty: <input name = "quantity" value="" placeholder="quantity" /> <br/>
                    <input type = "submit" className="btn btn-primary" />
               </form>
-             </div>
-            </div>
+             
+        </div>
       </DefaultLayout>
     );
   }
