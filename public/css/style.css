@@ -38,7 +38,7 @@ footer {
 	position: bottom;
 }
 
-.nav justify-content-center bg-dark {
+d-flex justify-content-center {
 	background-color: white;
 	border-radius: 5px;
 }
