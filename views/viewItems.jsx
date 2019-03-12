@@ -17,15 +17,13 @@ class ViewItems extends React.Component {
                         </div>
                       </div>
                     </div>                           
-                     </div>
+                </div>
                          
             );
     });
         return (
          <DefaultLayout>
-            <div>
-             
-              
+            <div> 
               <h2> List of Items Homepage</h2>
               
                     <div class="container">
@@ -34,8 +32,6 @@ class ViewItems extends React.Component {
                            </div>
                            </div>
             
-
-              
           </div>
           </DefaultLayout>
         

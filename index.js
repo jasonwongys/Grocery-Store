@@ -6,7 +6,7 @@ const methodOverride = require('method-override');
 const pg = require('pg');
 const url = require('url');
 
-app.use(express.static('public'));
+
 
 // Initialise postgres client
 
@@ -44,7 +44,7 @@ pool.on('error', function (err) {
 
 // Init express app
 const app = express();
-
+app.use(express.static('public'));
 
 app.use(express.json());
 app.use(express.urlencoded({
