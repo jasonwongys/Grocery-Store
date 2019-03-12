@@ -10,8 +10,9 @@ class EditCartItems extends React.Component {
 
     return (   
     <DefaultLayout>
+    <h2>Edit Items in Cart</h2>
       <div class="d-flex justify-content-center">
-        <h1>Edit Items in Cart</h1>
+        
         <form method="POST" action={"/cart/"+cartItem.items_id+"?_method=PUT"}>
             <h3> Item ID: {cartItem.items_id} </h3>
             <input type="hidden" name = "id" value={cartItem.items_id} />
@@ -21,7 +22,7 @@ class EditCartItems extends React.Component {
             <h3> Item price: {cartItem.price} </h3>
             
             Item Qty
-            <input name = "quantity" value={cartItem.quantity}/> <br />
+            <input name = "quantity" value={cartItem.quantity} placeholder="Enter quantity" /> 
             <input type = "submit" value="Save Changes" className="btn btn-primary"/>
         </form>
 
