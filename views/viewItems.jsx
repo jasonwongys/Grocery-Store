@@ -10,15 +10,16 @@ class ViewItems extends React.Component {
    const cardCon = {
        textAlign: 'center'
    }
+
     let items = this.props.items.map( (items, index) => {
         return (
                       <div class="card" style={card}>
-                          <img src={items.photo} class="card-img-top"/>
+                          <img src={items.photo} className="card-img-top"/>
                           <div class="card-body">
                           <h5 className="card-title">{items.name}</h5>
                             <p class="card-text">${items.price}</p>
                           </div>
-                          <a href={"/items/" + items.id} class="btn btn-primary">Add Item</a>
+                          <a href={"/items/" + items.id} className="btn btn-primary">Add Item</a>
                         </div>
             );
     });
@@ -26,12 +27,9 @@ class ViewItems extends React.Component {
          <DefaultLayout>
             <div>
               <h2> List of Items Homepage</h2>
-
                  <div style={cardCon}>{items}</div>
-
-          </div>
+            </div>
           </DefaultLayout>
-
     );
   }
 }
