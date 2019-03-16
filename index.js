@@ -294,33 +294,6 @@ app.delete('/cart/:id', (req, res) => {
     
   });
 });
-var fadeTime = 300;
-
-function calculateCart(){
-  let total = 0;
-
-  $('.product').each(function() {
-    total += parsefloat($(this).children('.product-line-price').text());
-  });
-
-$('.totals-value').fadeOut(fadeTime, function() {
-  $('#cart-total').html(total.toFixed(2));
-
-  if(total == 0) {
-     $('.checkout').fadeOut(fadeTime);
-
-    }else{
-      $('.checkout').fadeIn(fadeTime);
-    }
-    $('.totals-value').fadeIn(fadeTime);
-  
-  });
-
-}
-
-
-
-
 
 
 /**

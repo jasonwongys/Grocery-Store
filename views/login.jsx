@@ -14,7 +14,7 @@ class Login extends React.Component {
                 
 	           <div class="login">
                 
-        <h1 class="headermsg"> Welcome to Jason's Grocery</h1>
+                <h1 class="headermsg"> Welcome to Jason's Grocery</h1>
 
                 <form action="/" method="POST">
 

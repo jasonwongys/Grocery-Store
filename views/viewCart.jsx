@@ -14,7 +14,7 @@ class ViewCart extends React.Component {
                       <td class="text-justify">{cart.quantity}</td>
                       <td class="text-justify"><a href={"/cart/" + cart.items_id+"/edit"}>Edit</a></td>
                 </tbody>
-            </div>
+              </div>
             );
 
     });
