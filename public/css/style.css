@@ -12,11 +12,8 @@ input {
 }
 
 .container{
-	margin-top: 55px;
-	display: inline-block;
-	justify-content: center;
+	margin: auto;
 }
-
 
 .card{
 	margin: 10px 10px;
@@ -27,7 +24,7 @@ input {
 }
 
 nav {
-	color: black;
+	width: 100%;
 }
 
 img {
@@ -42,3 +39,4 @@ d-flex justify-content-center {
 	background-color: white;
 	border-radius: 5px;
 }
+

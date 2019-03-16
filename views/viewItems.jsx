@@ -13,6 +13,7 @@ class ViewItems extends React.Component {
 
     let items = this.props.items.map( (items, index) => {
         return (
+                  
                       <div class="card" style={card}>
                           <img src={items.photo} className="card-img-top"/>
                           <div class="card-body">

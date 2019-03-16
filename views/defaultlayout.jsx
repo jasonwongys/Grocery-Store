@@ -12,7 +12,7 @@ class DefaultLayout extends React.Component {
         <title>Grocery Shop</title>
         </head>
         <header>
-          <h1> Jason Grocery Shop</h1>
+          <h1> Jason's Grocery Shop</h1>
             <nav>
                 <ul className="nav justify-content-center bg-dark">
                   <li className="nav-item">
@@ -28,9 +28,12 @@ class DefaultLayout extends React.Component {
             </nav>
         </header>
 
-        <body className="container-fluid">
+        <body className="container">
             {this.props.children}         
         </body>
+        <footer>
+          Created by Jason Wong @ Github
+        </footer>
 
       </html>
     );

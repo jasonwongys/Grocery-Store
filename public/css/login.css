@@ -1,3 +1,29 @@
 body {
 	background-image: url("carrots-food-fresh-616404.jpg"); ;
 }
+
+div.login {
+	
+	background-color: #8FB8ED;
+	display: flex;
+	align-content: center;
+	margin: auto;
+	padding: 20px 0 20px 0;
+	margin-top: 110px;
+	border-radius: 10px;
+	width: 1000px;
+	height: 300px;
+	font-family: Ubuntu;
+}
+
+.container-fluid {
+	margin: auto;
+}
+
+h1.headermsg {
+	
+	text-align: center;
+	margin: 100px;
+	font-family: Ubuntu;
+
+}

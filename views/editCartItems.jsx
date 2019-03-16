@@ -29,9 +29,6 @@ class EditCartItems extends React.Component {
                 <input type="submit" value="Delete Item" className="btn btn-danger" />
               </form>
         </form>
-
-        
-
       </div>
      </DefaultLayout>
     );
