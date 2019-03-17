@@ -20,6 +20,7 @@ class AddItem extends React.Component {
                   <input type="hidden" name = "price" value={items.price} />
                    Item Qty: <input name = "quantity" value="" placeholder="Enter quantity" /> <br/>
                    <input type = "submit" className="btn btn-primary" />
+                   
               </form>
         </div>
       </DefaultLayout>

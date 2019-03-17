@@ -22,6 +22,9 @@ class DefaultLayout extends React.Component {
                     <a className="nav-link text-info" href="/cart">View Cart</a>
                   </li>
                   <li className="nav-item">
+                    <a className="nav-link text-info" href="/summary">Checkout My Cart</a>
+                  </li>
+                  <li className="nav-item">
                     <a className="nav-link text-info" href="/user/logout">Log out</a>
                   </li>
                 </ul>

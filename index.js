@@ -1,3 +1,6 @@
+
+
+
 console.log("starting up!!");
 var PORT = process.env.PORT || 3000;
 
@@ -223,7 +226,7 @@ app.get('/cart', (req, res) => {
         } else {
             console.log("Result: ", queryResult.rows);
             //console.log(queryResult.rows);
-             res.render('viewCart', {cart: queryResult.rows});
+             res.render('viewCart', summary{cart: queryResult.rows});
          };
     });
 });
@@ -245,6 +248,23 @@ app.get('/cart/:id/edit', (req, res) => {
  //response.render('home');
     });
 });
+
+// Get summary for user cart and calculate total cost for checkout
+app.get('/summary', (req, res) => {
+
+    let id = req.params.id;
+    const queryText = `SELECT * FROM cart`;
+
+    pool.query(queryText,(err, queryResult) => {
+      if (err) {
+          console.log("Error", err);
+      } else {
+          //console.log("result", queryResult.rows);
+          res.render("summary", {summary: queryResult.rows});
+      };
+
+  });
+})
 
 // Update the item quantity in the cart 
 app.put('/cart/:id', (req, res) => {
